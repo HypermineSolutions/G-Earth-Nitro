@@ -24,7 +24,7 @@ public class NitroHttpProxyIntercept extends HttpProxyInterceptInitializer {
 
     private static final String NitroConfigSearch = "socket.url";
     private static final String NitroClientSearch = "configurationUrls:";
-    private static final Pattern NitroConfigPattern = Pattern.compile("[\"']socket\\.url[\"']:(\\s+)?[\"'](wss?:.*?)[\"']", Pattern.MULTILINE);
+    private static final Pattern NitroConfigPattern = Pattern.compile("[\"']bobba\\.wsock\\.url[\"']:(\\s+)?[\"'](wss?:.*?)[\"']", Pattern.MULTILINE);
 
     // https://developers.cloudflare.com/fundamentals/get-started/reference/cloudflare-cookies/
     private static final HashSet<String> CloudflareCookies = new HashSet<>(Arrays.asList(
